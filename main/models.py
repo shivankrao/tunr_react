@@ -5,6 +5,10 @@ class Artist(models.Model);
     photo_url = models.CharField(max_length=400, null= True, blank= True)
     nationality = models.CharField(max_length=225)
 
+
+def __str__(self):
+    return self.name
+
 class Song(models.Model);
     title = models.CharField(max_length=255)
     album = models.CharField(max_length=255)
